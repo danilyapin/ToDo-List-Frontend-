@@ -46,8 +46,8 @@ export default function BasicTabs() {
         <Box sx={{ width: '100%' }}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                 <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                    <Tab label="Neuer ToDo einfügen" {...a11yProps(0)} />
-                    <Tab label="ToDo zu tun" {...a11yProps(1)} />
+                    <Tab label="Neue ToDo einfügen" {...a11yProps(0)} />
+                    <Tab label="Anstehende ToDos" {...a11yProps(1)} />
                     <Tab label="Erledigte ToDos" {...a11yProps(2)} />
                 </Tabs>
             </Box>
@@ -66,7 +66,7 @@ export default function BasicTabs() {
 
             </CustomTabPanel>
             <CustomTabPanel value={value} index={1}>
-                ToDo zu tun
+                Anstehende ToDos
             </CustomTabPanel>
             <CustomTabPanel value={value} index={2}>
                 Erledigte ToDos
